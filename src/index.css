@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply snap-y snap-mandatory scroll-smooth;
+  }
+  body {
+    @apply bg-[#12161E] text-[#EEEEED] font-sans antialiased;
+  }
+}
+
+/* Custom Scrollbar for non-overlay browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#12161E];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#5C677A]/30 rounded-full hover:bg-[#5C677A]/50 transition-colors;
+}
+
+/* Lenis Scroll */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
