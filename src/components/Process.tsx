@@ -3,19 +3,19 @@
 
 const services = [
   {
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop',
+    title: 'NDZ Chapters',
+    subtitle: 'Student communities & networks',
+  },
+  {
     image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2670&auto=format&fit=crop',
-    title: 'Campus Builders Program',
+    title: 'Campus Builders',
     subtitle: 'Student-led execution teams',
   },
   {
     image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=2670&auto=format&fit=crop',
     title: 'NDZ Labs',
     subtitle: 'Innovation pods & prototypes',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=2574&auto=format&fit=crop',
-    title: 'Creative Studios',
-    subtitle: 'Design, content & podcasting',
   },
 ];
 
