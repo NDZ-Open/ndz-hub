@@ -30,12 +30,22 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button className="px-8 py-4 bg-[#04E998] text-[#12161E] font-bold rounded-full hover:bg-[#04E998]/90 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(4,233,152,0.3)] hover:shadow-[0_0_30px_rgba(4,233,152,0.5)] transform hover:-translate-y-1">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-[#04E998] text-[#12161E] font-bold rounded-full hover:bg-[#04E998]/90 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(4,233,152,0.3)] hover:shadow-[0_0_30px_rgba(4,233,152,0.5)] transform hover:-translate-y-1"
+            >
               Join NDZ Hub <ArrowRight size={20} />
-            </button>
-            <button className="px-8 py-4 bg-transparent border border-[#5C677A] text-[#EEEEED] font-medium rounded-full hover:bg-[#5C677A]/10 transition-all">
+            </a>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSetAZlO0iqNB-c46vQSJI2QlHDTbJTiqFeTig0mCHADH_Df3Q/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-transparent border border-[#5C677A] text-[#EEEEED] font-medium rounded-full hover:bg-[#5C677A]/10 transition-all"
+            >
               Apply to Start a Chapter
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

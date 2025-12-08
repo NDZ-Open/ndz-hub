@@ -47,7 +47,7 @@ export default function Footer() {
               <li><a href="#" className="hover:text-[#04E998] transition-colors">Join as a Volunteer</a></li>
               <li><a href="#" className="hover:text-[#04E998] transition-colors">Become a Partner</a></li>
               <li><a href="#" className="hover:text-[#04E998] transition-colors">Campus Opportunities</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">Events Directory</a></li>
+              <li><a href="https://luma.com/user/ndz" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Events</a></li>
             </ul>
           </div>
 
@@ -55,9 +55,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-8 text-[#EEEEED]">Quick Links</h3>
             <ul className="space-y-4 text-[#AEB0AA]">
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">NDZ Forum</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">NDZ Journal</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">NDZ Wiki</a></li>
+              <li><a href="https://ndz.ng" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">NDZ Forum</a></li>
+              <li><a href="https://journal.ndz.ng" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">NDZ Journal</a></li>
+              <li><a href="https://wiki.ndz.ng" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">NDZ Wiki</a></li>
             </ul>
           </div>
         </div>

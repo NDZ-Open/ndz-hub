@@ -52,7 +52,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center md:justify-self-end">
-            <a href="#join" className="px-6 py-2.5 bg-[#04E998] text-[#12161E] font-bold rounded-full hover:bg-[#04E998]/90 transition-colors">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-[#04E998] text-[#12161E] font-bold rounded-full hover:bg-[#04E998]/90 transition-colors">
               Join NDZ Hub
             </a>
           </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="flex gap-4 pt-6 border-t border-[#5C677A]">
-                <a href="#join" className="w-full py-3 bg-[#04E998] text-[#12161E] font-bold rounded-full text-center hover:bg-[#04E998]/90 transition-colors">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#04E998] text-[#12161E] font-bold rounded-full text-center hover:bg-[#04E998]/90 transition-colors">
                   Join NDZ Hub
                 </a>
               </div>

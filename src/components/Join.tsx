@@ -6,18 +6,21 @@ const opportunities = [
     title: 'Start a Chapter',
     description: 'Build a student community of innovators on your campus.',
     action: 'Apply Now',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSetAZlO0iqNB-c46vQSJI2QlHDTbJTiqFeTig0mCHADH_Df3Q/viewform',
   },
   {
     icon: <Heart className="w-6 h-6" />,
     title: 'Become a Volunteer',
     description: 'Support NDZ events, coach teams, manage communities, and grow with us.',
     action: 'Join Us',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform',
   },
   {
     icon: <Rocket className="w-6 h-6" />,
     title: 'Lead a Project',
     description: 'Propose initiatives, form a team, and execute with NDZ backing.',
     action: 'Start Project',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform',
   },
 ];
 
@@ -49,9 +52,14 @@ export default function Join() {
               <h3 className="text-2xl font-bold text-[#EEEEED] mb-4">{item.title}</h3>
               <p className="text-[#AEB0AA] mb-8 leading-relaxed">{item.description}</p>
               
-              <button className="w-full py-4 bg-transparent border border-[#5C677A] text-[#EEEEED] font-bold rounded-xl hover:bg-[#04E998] hover:border-[#04E998] hover:text-[#12161E] transition-all flex items-center justify-center gap-2 group-hover:shadow-lg">
+              <a 
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-transparent border border-[#5C677A] text-[#EEEEED] font-bold rounded-xl hover:bg-[#04E998] hover:border-[#04E998] hover:text-[#12161E] transition-all flex items-center justify-center gap-2 group-hover:shadow-lg"
+              >
                 {item.action} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </div>
           ))}
         </div>
