@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { name: 'Home', href: '#' },
-  { name: 'Programs', href: '#programs' },
-  { name: 'Impact', href: '#impact' },
-  { name: 'Community', href: '#community' },
+  { name: 'Home', href: '/' },
+  { name: 'Chapters', href: '/chapters' },
+  { name: 'Labs', href: '/labs' },
+  { name: 'Builders', href: '/builders' },
   { name: 'Events', href: 'https://luma.com/user/ndz' },
 ];
 
@@ -40,13 +41,25 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-[#EEEEED] hover:text-[#04E998] transition-colors font-medium"
-              >
-                {item.name}
-              </a>
+              item.href.startsWith('http') ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EEEEED] hover:text-[#04E998] transition-colors font-medium"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-[#EEEEED] hover:text-[#04E998] transition-colors font-medium"
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -79,14 +92,27 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-6">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-[#EEEEED] hover:text-[#04E998] transition-colors text-xl font-medium"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
+                item.href.startsWith('http') ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#EEEEED] hover:text-[#04E998] transition-colors text-xl font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-[#EEEEED] hover:text-[#04E998] transition-colors text-xl font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               <div className="flex gap-4 pt-6 border-t border-[#5C677A]">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#04E998] text-[#12161E] font-bold rounded-full text-center hover:bg-[#04E998]/90 transition-colors">

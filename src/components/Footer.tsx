@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
@@ -11,8 +12,7 @@ export default function Footer() {
               <img src="/logo.png" alt="NDZ Hub" className="h-10 w-auto" />
             </div>
             <p className="text-[#AEB0AA] leading-relaxed">
-              Nigeria’s university-wide innovation movement. <br />
-              Empowering students to build, learn, and lead real projects with real impact.
+              Nigeria’s university-wide innovation movement. Empowering students to build, learn, and lead real projects with real impact.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-[#1C1E28] border border-[#5C677A]/20 flex items-center justify-center hover:bg-[#04E998] hover:text-[#12161E] hover:border-[#04E998] transition-all">
@@ -34,9 +34,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-8 text-[#EEEEED]">Programs</h3>
             <ul className="space-y-4 text-[#AEB0AA]">
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">NDZ Chapters</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">NDZ Labs</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">Campus Builders</a></li>
+              <li><Link to="/chapters" className="hover:text-[#04E998] transition-colors">NDZ Chapters</Link></li>
+              <li><Link to="/labs" className="hover:text-[#04E998] transition-colors">NDZ Labs</Link></li>
+              <li><Link to="/builders" className="hover:text-[#04E998] transition-colors">Campus Builders</Link></li>
             </ul>
           </div>
 
@@ -44,9 +44,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-8 text-[#EEEEED]">Community</h3>
             <ul className="space-y-4 text-[#AEB0AA]">
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">Join as a Volunteer</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Join as a Volunteer</a></li>
               <li><a href="#" className="hover:text-[#04E998] transition-colors">Become a Partner</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">Campus Opportunities</a></li>
+              <li><a href="https://ndz.ng/t/hiring" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Campus Opportunities</a></li>
               <li><a href="https://luma.com/user/ndz" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Events</a></li>
             </ul>
           </div>
