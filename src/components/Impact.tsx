@@ -1,4 +1,5 @@
 import { Building2, Users, Rocket, FlaskConical } from 'lucide-react';
+import ourImpactImg from '../assets/Our Impact.jpg';
 
 const benefits = [
   {
@@ -56,7 +57,7 @@ export default function Impact() {
           <div className="relative">
             <div className="absolute -inset-4 bg-[#04E998]/20 rounded-3xl blur-xl" />
             <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2670&auto=format&fit=crop" 
+              src={ourImpactImg} 
               alt="Impact" 
               className="relative rounded-3xl w-full shadow-2xl border border-[#5C677A]/20"
             />

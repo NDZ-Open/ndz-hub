@@ -1,14 +1,16 @@
 
+import ndzChaptersImg from '../assets/NDZ Chapters.jpg';
+import campusBuildersImg from '../assets/Campus Builders.jpg';
 
 
 const services = [
   {
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop',
+    image: ndzChaptersImg,
     title: 'NDZ Chapters',
     subtitle: 'Student communities & networks',
   },
   {
-    image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2670&auto=format&fit=crop',
+    image: campusBuildersImg,
     title: 'Campus Builders',
     subtitle: 'Student-led execution teams',
   },

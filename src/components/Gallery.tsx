@@ -1,23 +1,27 @@
 import { ArrowUpRight } from 'lucide-react';
+import hackathonsImg from '../assets/Hackathons.jpg';
+import publicLecturesImg from '../assets/Public Lectures.jpg';
+import communityProjectsImg from '../assets/Community Projects.jpg';
+import campusBuildersImg from '../assets/Campus Builders.jpg';
 
 const projects = [
   {
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2670&auto=format&fit=crop',
+    image: hackathonsImg,
     title: 'Hackathons',
     category: 'Innovation',
   },
   {
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop',
+    image: publicLecturesImg,
     title: 'Public Lectures',
     category: 'Education',
   },
   {
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop',
+    image: communityProjectsImg,
     title: 'Community Projects',
     category: 'Impact',
   },
   {
-    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop',
+    image: campusBuildersImg,
     title: 'Tech Workshops',
     category: 'Skills',
   },
@@ -34,9 +38,14 @@ export default function Gallery() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#EEEEED] leading-tight">Explore Recent <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#04E998] to-[#00C27B]">Campus Activities</span></h2>
           </div>
-          <button className="hidden md:flex items-center gap-2 text-[#EEEEED] font-bold hover:text-[#04E998] transition-colors group">
+          <a 
+            href="https://luma.com/user/ndz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-2 text-[#EEEEED] font-bold hover:text-[#04E998] transition-colors group"
+          >
             View All Activities <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-          </button>
+          </a>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6">
@@ -58,9 +67,14 @@ export default function Gallery() {
         </div>
         
         <div className="mt-12 flex justify-center md:hidden">
-            <button className="flex items-center gap-2 text-[#EEEEED] font-bold hover:text-[#04E998] transition-colors">
+            <a 
+              href="https://luma.com/user/ndz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[#EEEEED] font-bold hover:text-[#04E998] transition-colors"
+            >
                 View All Activities <ArrowUpRight size={20} />
-            </button>
+            </a>
         </div>
       </div>
     </section>

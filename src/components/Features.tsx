@@ -1,4 +1,5 @@
 import { Users, Building2, Heart, Play } from 'lucide-react';
+import campusBuildersImg from '../assets/Campus Builders.jpg';
 
 const features = [
   {
@@ -30,7 +31,7 @@ export default function Features() {
             <div className="absolute -inset-1 bg-gradient-to-r from-[#04E998] to-[#00C27B] rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000" />
             <div className="relative rounded-2xl overflow-hidden border border-[#5C677A]/30 aspect-video">
               <img 
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop" 
+                src={campusBuildersImg} 
                 alt="Students working" 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
               />

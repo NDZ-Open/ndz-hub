@@ -45,7 +45,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-8 text-[#EEEEED]">Community</h3>
             <ul className="space-y-4 text-[#AEB0AA]">
               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Join as a Volunteer</a></li>
-              <li><a href="#" className="hover:text-[#04E998] transition-colors">Become a Partner</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgmU3Ojt2zwan125k4aRVSoa5e9FW4mp3GCjWcww5UqwPziQ/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Become a Partner</a></li>
               <li><a href="https://ndz.ng/t/hiring" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Campus Opportunities</a></li>
               <li><a href="https://luma.com/user/ndz" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Events</a></li>
             </ul>
