@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -14,18 +14,12 @@ export default function Footer() {
             <p className="text-[#AEB0AA] leading-relaxed">
               Nigeria’s university-wide innovation movement. Empowering students to build, learn, and lead real projects with real impact.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1C1E28] border border-[#5C677A]/20 flex items-center justify-center hover:bg-[#04E998] hover:text-[#12161E] hover:border-[#04E998] transition-all">
-                <Facebook size={18} />
+            <div className="flex gap-6">
+              <a href="https://twitter.com/ndzhub" target="_blank" rel="noopener noreferrer" className="text-[#04E998] hover:text-[#00C27B] transition-colors">
+                <Twitter size={24} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1C1E28] border border-[#5C677A]/20 flex items-center justify-center hover:bg-[#04E998] hover:text-[#12161E] hover:border-[#04E998] transition-all">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1C1E28] border border-[#5C677A]/20 flex items-center justify-center hover:bg-[#04E998] hover:text-[#12161E] hover:border-[#04E998] transition-all">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1C1E28] border border-[#5C677A]/20 flex items-center justify-center hover:bg-[#04E998] hover:text-[#12161E] hover:border-[#04E998] transition-all">
-                <Linkedin size={18} />
+              <a href="https://instagram.com/ndzhub" target="_blank" rel="noopener noreferrer" className="text-[#04E998] hover:text-[#00C27B] transition-colors">
+                <Instagram size={24} />
               </a>
             </div>
           </div>
@@ -42,11 +36,11 @@ export default function Footer() {
 
           {/* Community */}
           <div>
-            <h3 className="text-lg font-bold mb-8 text-[#EEEEED]">Community</h3>
+            <h3 className="text-lg font-bold mb-8 text-[#EEEEED]">NDZ Hub</h3>
             <ul className="space-y-4 text-[#AEB0AA]">
               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfTWSMRpKKdp6sAQ2rOxw1qRSZchQ52cdBHo1TIVkMTHCWwzA/viewform" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Join as a Volunteer</a></li>
               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgmU3Ojt2zwan125k4aRVSoa5e9FW4mp3GCjWcww5UqwPziQ/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Become a Partner</a></li>
-              <li><a href="https://ndz.ng/t/hiring" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Campus Opportunities</a></li>
+              <li><a href="https://ndz.ng/t/hiring" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Job Opportunities</a></li>
               <li><a href="https://luma.com/user/ndz" target="_blank" rel="noopener noreferrer" className="hover:text-[#04E998] transition-colors">Events</a></li>
             </ul>
           </div>
